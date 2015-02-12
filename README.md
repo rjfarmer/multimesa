@@ -1,2 +1,2 @@
 # multimesa
-Script to make it easy to generate large number of fodlers with MESA inlists in
+Script to make it easy to generate large number of folders with MESA inlists in
