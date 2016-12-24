@@ -19,7 +19,7 @@ over_list=[0.0,0.001,0.016,0.2]
 over_name='overshoot_f_above_nonburn'
 over_section='control'
 
-themro_list=[0.0,0.1,1.0,10.0]
+thermo_list=[0.0,0.1,1.0,10.0]
 thermo_name="thermo_haline_coeff"
 thermo_section='control'
 
