@@ -1,4 +1,4 @@
-#Copyright (c) 2015, Robert Farmer rjfarmer@asu.edu
+#Copyright (c) 2015, Robert Farmer r.j.farmer@uva.nl
 
 #Permission to use, copy, modify, and/or distribute this software for any
 #purpose with or without fee is hereby granted, provided that the above
@@ -51,6 +51,11 @@ try:
 except AttributeError:
 	print("No output_folder set")
 	sys.exit(1)	
+
+try:
+	inlist_name=e.inlist_name
+except AttributeError:
+	inlist_name='inlist_cluster'
 
 #Access the different avraibles we want to loop over
 mesa_name=[]
@@ -140,7 +145,7 @@ for l in itertools.product(*mesa_loop):
 	outVal=list(l)+extraVal
 	outSec=mesa_sec+extraSec
 	
-	with open(os.path.join(outF,"inlist_cluster"),'w') as f:
+	with open(os.path.join(outF,inlist_name),'w') as f:
 		f.write("&star_job\n")
 		for i in range(len(outName)):
 			if outSec[i]=="star":		

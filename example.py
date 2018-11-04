@@ -5,6 +5,9 @@
 #Location to write out folders too
 output_folder="output/"
 
+#Name to call inlist that get written if not set defaults to inlist_cluster
+inlist_name='inlist_cluster'
+
 folder_num=1
 # if set to 1 we number the folders otherwise use the var names
 
